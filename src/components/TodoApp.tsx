@@ -14,8 +14,8 @@ export const TodoApp = () => {
 
     return (
         <div>
-            <h1>Lista de tareas</h1>
-            <div>
+            <h1>Lista de Tareas</h1>
+            <div className="flex">
                 <input
                     type="text"
                     value={nuevaTarea}
@@ -23,7 +23,7 @@ export const TodoApp = () => {
                     placeholder="Nueva Tarea"
                 />
 
-                <button className="agregar" onClick={handleAddTask}>Agreagar Tarea</button>
+                <button className="agregar" onClick={handleAddTask}>Agregar Tarea</button>
             </div>
             <ListaTareas
                 listaTareas={listaTareas}
